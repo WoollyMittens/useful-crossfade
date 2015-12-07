@@ -29,16 +29,16 @@ To enable the use of HTML5 tags in Internet Explorer 8 and lower, include *html5
 ## How to start the script
 
 ```html
-<section class="crossfade">
+<figure class="crossfade">
 	<div class="crossfade-buffer" style="background-image: url(./inc/img/crossfade-a.jpg);"></div>
 	<div class="crossfade-buffer" style="background-image: url(./inc/img/crossfade-b.jpg);"></div>
 	<div class="crossfade-buffer" style="background-image: url(./inc/img/crossfade-c.jpg);"></div>
-	<div class="crossfade-overlay">
+	<figcaption class="crossfade-overlay">
 		<h1>Lorem ipsum</h1>
 		<p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 		<a href="#">Sed do eiusmod</a>
-	</div>
-</section>
+	</figcaption>
+</figure>
 ```
 
 
