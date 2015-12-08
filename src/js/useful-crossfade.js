@@ -1,6 +1,6 @@
 /*
 	Source:
-	van Creij, Maurice (2014). "useful.aspectratio.js: Keeps the proportions of a box the same regardless of browser size.", version 20141127, http://www.woollymittens.nl/.
+	van Creij, Maurice (2014). "useful.crossfade.js: Cross-fades between several different backgrounds.", version 20141127, http://www.woollymittens.nl/.
 
 	License:
 	This work is licensed under a Creative Commons Attribution 3.0 Unported License.
