@@ -26,7 +26,7 @@ useful.Crossfade = function () {
 		// store the config
 		for (var property in config) { this.config[property] = config[property]; }
 		// set off the first transition
-		this.config.interval = setInterval(this.onShowNext(), this.config.delay);
+		this.config.interval = setInterval(this.showNext.bind(this), this.config.delay);
 		// return the object
 		return this;
 	};
@@ -40,17 +40,6 @@ useful.Crossfade = function () {
 			// reorder the element in the stack
 			elements[a].className = elements[a].className.split(' crossfade-buffer-')[0] + ' crossfade-buffer-' + (elements.length - (a + this.config.index) % elements.length);
 		}
-	};
-
-	// EVENTS
-
-	this.onShowNext = function () {
-		// establish a permanent context
-		var _this = this;
-		// return an event handler
-		return function () {
-			_this.showNext();
-		};
 	};
 
 };
