@@ -1,4 +1,4 @@
-# useful.crossfade.js: Cross-fading backgrounds
+# crossfade.js: Cross-fading backgrounds
 
 Cross-fades between several different backgrounds.
 
@@ -16,14 +16,6 @@ This include can be added to the header or placed inline before the script is in
 
 ```html
 <script src="./js/useful-crossfade.js"></script>
-```
-
-To enable the use of HTML5 tags in Internet Explorer 8 and lower, include *html5.js*.
-
-```html
-<!--[if lte IE 9]>
-	<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-<![endif]-->
 ```
 
 ## How to start the script
@@ -45,7 +37,7 @@ To enable the use of HTML5 tags in Internet Explorer 8 and lower, include *html5
 **style** - The backgrounds may also be defined in the stylesheet.
 
 ```javascript
-var crossfade = new useful.Crossfade().init({
+var crossfade = new Crossfade({
 	'delay': 4000,
 	'elements': document.querySelectorAll('.crossfade-buffer')
 });
