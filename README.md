@@ -9,14 +9,31 @@ Try the <a href="http://www.woollymittens.nl/default.php?url=useful-crossfade">d
 The stylesheet is best included in the header of the document.
 
 ```html
-<link rel="stylesheet" href="./css/useful-crossfade.css"/>
+<link rel="stylesheet" href="css/crossfade.css"/>
 ```
 
 This include can be added to the header or placed inline before the script is invoked.
 
 ```html
-<script src="./js/useful-crossfade.js"></script>
+<script src="js/crossfade.js"></script>
 ```
+
+Or use [Require.js](https://requirejs.org/).
+
+```js
+requirejs([
+	'js/crossfade.js'
+], function(Crossfade) {
+	...
+});
+```
+
+Or import into an MVC framework.
+
+```js
+var Crossfade = require('js/crossfade.js');
+```
+
 
 ## How to start the script
 

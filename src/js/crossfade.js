@@ -44,5 +44,5 @@ var Crossfade = function (config) {
 };
 
 // return as a require.js module
-if (typeof define != 'undefined') define(['crossfade'], function () { return Crossfade });
+if (typeof define != 'undefined') define([], function () { return Crossfade });
 if (typeof module != 'undefined') module.exports = Crossfade;
